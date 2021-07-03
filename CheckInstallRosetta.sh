@@ -8,3 +8,5 @@ if [[ $CHIP == *"Apple"* ]] && [[ -z `pkgutil --pkgs=".*Rosetta.*"` ]]
 then
 		/usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
+
+exit $?
